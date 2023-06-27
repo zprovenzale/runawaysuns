@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Tabs.css'
-import FirstTab from '../Tabs/FirstTab';
-import SecondTab from '../Tabs/SecondTab';
+import FirstTab from '../TabsAll/FirstTab';
+import SecondTab from '../TabsAll/SecondTab';
 import TabNavItem from './TabNavItem';
 import TabContent from './TabContent';
 
