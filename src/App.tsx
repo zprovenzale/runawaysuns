@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import ViteReactHome from './components/Default/ViteReactHome'
-import Tabs from './components/TabsFromScratch/Tabs'
+import Tabs from './components/TabsFromScratch/TabsFromScratch'
 import TabsReactLibrary from './components/TabsFromReactLibrary/TabsFromReactLibrary'
 import TabsMaterialUI from './components/TabsFromMaterialUI/TabsMaterialUI'
 

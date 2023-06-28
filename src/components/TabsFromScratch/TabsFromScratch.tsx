@@ -1,11 +1,28 @@
 import { useState } from 'react';
-import './Tabs.css'
+import './TabsFromScratch.css'
 import FirstTab from '../TabsAll/FirstTab';
 import SecondTab from '../TabsAll/SecondTab';
-import TabNavItem from './TabNavItem';
-import TabContent from './TabContent';
 
+const TabContent = ({id, activeTab, children}) => {
+    return (
+        activeTab === id ? <div className="TabContent">
+            { children }
+        </div>
+        : null
+    );
+};
 
+const TabNavItem = ({ id, title, activeTab, setActiveTab}) => {
+    const handleClick = () => {
+        setActiveTab(id);
+    };
+
+    return (
+        <li onClick={handleClick} className={activeTab === id ? "active" : ""}>
+            { title }
+        </li>
+    )
+}
 
 const Tabs = () => {
     const [activeTab, setActiveTab] = useState("tab1");
