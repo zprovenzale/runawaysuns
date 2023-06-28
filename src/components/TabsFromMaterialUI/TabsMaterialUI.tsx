@@ -1,5 +1,7 @@
 import { Box, Tab, Tabs, Typography } from '@mui/material';
 import { ReactNode, SyntheticEvent, useState } from 'react';
+import FirstTab from '../TabsAll/FirstTab';
+import SecondTab from '../TabsAll/SecondTab';
 
 interface TabPanelProps {
     children?: ReactNode;
@@ -51,10 +53,10 @@ function TabsMaterialUI(props: TabPanelProps) {
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                Item One
+                <FirstTab></FirstTab>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                Item Two
+                <SecondTab></SecondTab>
             </TabPanel>
             <TabPanel value={value} index={2}>
                 Item Three
